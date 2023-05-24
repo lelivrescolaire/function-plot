@@ -1,6 +1,8 @@
 import builtInMathEval from 'built-in-math-eval'
 import intervalArithmeticEval from 'interval-arithmetic-eval'
 
+window.global = window
+
 const samplers = {
   interval: intervalArithmeticEval,
   builtIn: builtInMathEval
